@@ -1,255 +1,456 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
+  <style>
     
-        <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br></br>
-            <input type="submit" value="Submit">
-          </form>
-          <br>
-          <textarea class="textarea"></textarea>
-          <br>
-          <input type="radio" name="gender" value="male"> Male
-          <input type="radio" name="gender" value="female"> female
-          <br>
-          <select id="country" name="country">
-            <option value="india">india</option>
-            <option value="Us">United states</option>
-            <option value="Canada">Canada</option>
-          </select>
-            <br>
-          
-            <input type="checkbox" name="country" value="Us" checked >
-            <input type="checkbox" name="country" value="Canada" checked>
-            <br>
-            <form>
-              <input type="file" name="fileToUpload" id="fileToUpload">
-             <input type="submit" value="Upload file" name="submit">
-
-            </form>
-            <br>
-            <form>
-              <input type="range" name="select a value " id="range">
-            </form>
-            <input type="date">
-            <input type="password">Password
-            <form>
-              <input type="text" class="text" name="text">Name
-              <input type="mail" class="mail" name="mail">Mail
-            </form>
-            <br>
-            <audio controls>
-              <source src="audio.mp3">
-            </audio>
-            <br>
-            <div>
-            <vedio controls>
-              <source src="vedio.mp4">
-            </vedio>
-          </div>
-            <br>
-            <!--q15-->
-            <video controls poster="./download.png">
-              <source src="video.mp4">
-              </video>
-              <br>
-              <!--q16-->
-              <iframe id="inlineFrameExample"
-              title="Inline Frame Example"
-              width="500"
-              height="500"
-              src="https://docs.google.com/document/d/1Eoizz2fez4Uv6LE4e6soN2_79qNAIIjH2a3-GjVIPd4/edit">
-            </iframe>
-            <br>
-            <style>
-              #myElement {
-                background-color: Red;
-                font-size: 18px;
-              }
-            </style>
-          
-            <div id="myElement">I created a Element of 19th Question in the Assignment</div>
-          
-          <p class="myClass"> Prosper near to Frisco</p>
-          <p class="myClass">Frisco near to Plano</p>
-          <p class="myClass">Princeton 8miles away from McKinney</p>
-          
-          <style>
-            .myClass {
-              color: blue;
-              font-size: 16px;
-            }
-          </style>
-          
-          <h1>This is a heading</h1>
-          <p>This is a paragraph</p>
-          <a href="#">This is a link</a>
-          
-          <style>
-            h1 {
-              color: red;
-              font-size: 24px;
-            }
-          
-            p {
-              color: blue;
-              font-size: 16px;
-            }
-          
-            a {
-              color: green;
-              font-size: 14px;
-            }
-          </style>
-          
-          
-          
-          
-          <div id="myElement">This is my element</div>
-          <style>
-            #myElement {
-              background-color: yellow;
-            }
-          </style>
-          
-          <div id="myElement">This is my element</div>
-          
-          <style>
-            #myElement {
-              border: 1px solid black;
-            }
-          </style>
-          
-          <p>This is some text</p>
-          
-          <style>
-            p {
-              font-size: 20px;
-              color: red;
-            }
-          </style>
-          
-          <table>
-            <tr>
-              <td> Uday, Cell 1</td>
-              <td>Row 1, Cell 2</td>
-            </tr>
-            <tr>
-              <td>Row 2, Cell 1</td>
-              <td>Row 2, Cell 2</td>
-            </tr>
-            <tr>
-              <td>Row 3, Cell 1</td>
-              <td>Row 3, Cell 2</td>
-            </tr>
-          </table>
-          
-          <style>
-            tr:nth-child(even) {
-              background-color: green;
-            }
-          </style><style>
-    #myElement {
-      background-color: blue;
-      font-size: 18px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+
+    header {
+      background-color: green;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Logo styles */
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 30px;
+      /* Adjust the height as needed */
+    }
+
+
+    .navigation {
+      display: flex;
+      align-items: center;
+    }
+
+    .navigation ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .navigation li {
+      margin-left: 10px;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .navigation {
+        display: none;
+      }
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .column {
+      padding: 10px;
+      border: 1px solid blue;
+      background-color: red;
+
+    }
+
+    .fixed-width {
+      width: 250px;
+
+    }
+
+    .flex-grow {
+      flex-grow: 1;
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 0 0 calc(55% - 30px);
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      flex: 10 5 250px;
+      background-color: green;
+      position: sticky;
+      top: 0;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+
+    .pricing-table {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .pricing-card {
+      flex: 0 0 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    .pricing-card h2 {
+      font-size: 24px;
+    }
+
+    .pricing-card p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card li {
+      margin-bottom: 10px;
+    }
+
+    .pricing-card button {
+      padding: 10px 20px;
+      background-color: black;
+      color: blue;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .vertical-menu {
+  display: flex;
+}
+
+.vertical-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vertical-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.vertical-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: blueviolet;
+  background: black;
+  margin-bottom: 20px;
+  padding: 0%;
+}
+
+.vertical-menu ul ul {
+  display: none;
+}
+
+.vertical-menu li:hover > ul {
+  display: block;
+}
+
+.container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex-grow: 1;
+      flex-basis: 0;
+      max-width: 100%;
+    }
+
+    @media (min-width: 500px) {
+      .column {
+        flex-basis: 40%;
+      }
+    }
+
+    @media (min-width: 400px) {
+      .column {
+        flex-basis: 25%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .column {
+        flex-basis: 25%;
+      }
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 50vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    .footer {
+      background-color: red;
+      padding: 20px;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid white;
+      border-radius: 4px;
+      background-color: white;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid white;
+      border-radius: 4px;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+    }
+
+    .login-form button:hover {
+      background-color: green;
+    }
+
+    .timeline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 50px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .timeline-item::before {
+      content: "";
+      display: block;
+      width: 2px;
+      height: 100%;
+      background-color: blue;
+      margin: 0 auto;
+    }
+
+    .timeline-item:last-child::before {
+      display: none;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      background-color: white;
+      border-radius: 3px;
+    }
+
   </style>
+</head>
 
-  <div id="myElement">I created a Element of 19th Question in the Assignment</div>
-
-<p class="myClass">Frisco</p>
-<p class="myClass">Plano</p>
-<p class="myClass">McKinney</p>
-
-<style>
-  .myClass {
-    color: Red;
-    font-size: 16px;
-  }
-</style>
-
-<h1>This is a heading</h1>
-<p>This is a paragraph</p>
-<a href="#">This is a link</a>
-
-<style>
-  h1 {
-    color: pink;
-    font-size: 24px;
-  }
-
-  p {
-    color: violet;
-    font-size: 16px;
-  }
-
-  a {
-    color: green;
-    font-size: 14px;
-  }
-</style>
+<body>
+  <header>
 
 
 
-
-<div id="myElement">This is my element</div>
-<style>
-  #myElement {
-    background-color: green;
-  }
-</style>
-
-<div id="myElement">This is my element</div>
-
-<style>
-  #myElement {
-    border: 1px solid darkblue;
-  }
-</style>
-
-<p>This is some text</p>
-
-<style>
-  p {
-    font-size: 20px;
-    color: red;
-  }
-</style>
-
-<table>
-  <tr>
-    <td> Uday, Cell 1</td>
-    <td>Row 1, Cell 2</td>
-  </tr>
-  <tr>
-    <td>Row 2, Cell 1</td>
-    <td>Row 2, Cell 2</td>
-  </tr>
-  <tr>
-    <td>Row 3, Cell 1</td>
-    <td>Row 3, Cell 2</td>
-  </tr>
-</table>
-
-<style>
-  tr:nth-child(even) {
-    background-color: green;
-  }
-</style>
+    <div class="logo">
+      <img src="image.png" alt="Logo">
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#JAVA">JAVA</a></li>
+        <li><a href="#CSS">CSS</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="column fixed-width">Column 1</div>
+    <div class="column flex-grow">Column 2</div>
+    <div class="column fixed-width">Column 3</div>
+  </div>
+  <br>
+  <div class="card-grid">
+    <div class="card">Card 1<br>HTML</div>
+    <div class="card">Card 2<br>JAVA</div>
+    <div class="card">Card 3<br>CSS</div>
+  </div>
 
 
-          
-       
-          
-            
-          
+  <div class="container">
+    <div class="sidebar">
 
-            
+    
+    <div class="main-content">
+      <img src="image.png" alt="image">
+    </div>
+  </div> 
+  </div>
 
+  <div class="pricing-table">
+    <div class="pricing-card">
+      <h2>Basic</h2>
+      <p>$10/month</p>
+      <ul>
+        <li>First 2 days free trail</li>
+        <li>With adds</li>
+        <li>Only one device can cannect</li>
+      </ul>
+      <button>Select</button>
+    </div>
+    <div class="pricing-card">
+      <h2>Standard</h2>
+      <p>$20/month</p>
+      <ul>
+        <li>First 10 days free</li>
+        <li>without adds</li>
+        <li>min two device can connect</li>
+      </ul>
+      <button>Select</button>
+    </div>
+    <div class="pricing-card">
+      <h2>Premium</h2>
+      <p>$30/month</p>
+      <ul>
+        <li>First 1 month Free</li>
+        <li>Watch without add</li>
+        <li>Min Three device can connect</li>
 
+      </ul>
+      <button>Select</button>
+    </div>
+  </div>
+  <nav class="vertical-menu">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Products</a>
+        <ul>
+          <li><a href="#">Category 1</a></li>
+          <li><a href="#">Category 2</a></li>
+          <li><a href="#">Category 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Services</a>
+        <ul>
+          <li><a href="#">Service 1</a></li>
+          <li><a href="#">Service 2</a></li>
+          <li><a href="#">Service 3</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="column" style="background-color: red;">
+      <p>Full Stack</p>
+    </div>
+    <div class="column" style="background-color: yellow;">
+      <p>Java</p>
+    </div>
+    <div class="column" style="background-color: green;">
+      <p>HTML</p>
+    </div>
+    <div class="login-form">
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button type="submit">Login</button>
+    </div>
+    </div>
+    <br>
+    <div class="content">
+     
+    </div>
+    <footer class="footer">
+      
+    </footer>
 
-    </head>
+    <ul class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-content">
+          <h3>CSS</h3>
+          <p>CSS (Cascading Style Sheets) is used to style and layout web pages</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-content">
+          <h3>HTML</h3>
+          <p>HTML is the standard markup language for creating Web pages</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-content">
+          <h3>JAVA</h3>
+          <p>Java is a widely-used programming language for coding web applications.</p>
+        </div>
+    
+    </ul>
+
+  </div>
+</body>
+
 </html>

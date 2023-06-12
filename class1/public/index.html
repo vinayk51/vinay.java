@@ -301,6 +301,416 @@
       border-radius: 3px;
     }
 
+    .container {
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .box {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 450px) {
+      .container {
+        padding: 10px;
+      }
+
+      .box {
+        padding: 10px;
+      }
+    }
+    @media (max-width: 476px) {
+      .container {
+        padding: 5px;
+      }
+
+      .box {
+        padding: 5px;
+      }
+    }
+    /*code*/
+    .querys {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 14px;
+  }
+  
+  h1 {
+    font-size: 15px;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  @media  (max-width: 500px) {
+    h1 {
+      font-size: 14px;
+     color: red;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  @media  (max-width: 300px) {
+    h1 {
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 12px;
+      color: blue;
+    }
+  }
+  .image-query {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pic {
+    flex: 0 0 25%;
+    padding: 10px;
+    box-sizing:border-box;
+  }
+  
+  .pic img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .pic {
+      flex: 0 0 50%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .pic {
+      flex: 0 0 25%;
+    }
+  }
+
+  /*question 4 */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-brand p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar-nav li {
+    margin-right: 10px;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .icon-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: pink;
+    margin-bottom: 4px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  
+    .navbar-toggle .icon-bar {
+      transition: background-color 0.3s;
+    }
+  
+    .navbar-toggle.collapsed .icon-bar {
+      background-color: black;
+    }
+  }
+
+  /* fifteen */
+  .break {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .feature {
+    flex: 0 0 30%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sign {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .features {
+      justify-content: center;
+    }
+  
+    .feature {
+      flex: 0 0 45%;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      flex: 0 0 90%;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .header h1 {
+      font-size: 24px;
+    }
+  
+    .feature {
+      flex: 0 0 100%;
+    }
+  }
+
+  /* sixteen */
+  .view {
+    position: relative;
+    height: 100vh; 
+  }
+  
+  .relate {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+  }
+
+  /* seventeen */
+  .horizon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .vertical {
+    text-align: center;
+    background-color: rgb(221, 113, 113);
+    padding: 20px;
+  }
+
+  /* eighteen */
+  nav {
+    background-color: black;
+    height: 50px;
+    margin-top: 10px;
+  }
+  
+  .inline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .inline li {
+    display: inline-block;
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* nineteen */
+  .hide {
+    width: 250px;
+    height: 200px;
+    border: 1px solid green;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  
+  .over {
+    padding: 10px;
+  }
+  
+/* twenty */
+.scroll {
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+    overflow: auto;
+    margin-top: 20px;
+  }
+  
+  .scroll-over {
+    padding: 10px;
+  }
+/* twentyOne */
+.scrolling {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #925757;
+    margin-top: 20px;
+  }
+  
+  .scrolls {
+    padding: 10px;
+  }
+  
+  .scrollable {
+    max-height: 80px;
+    overflow: scroll;
+  }
+  
+  /* twentyTwo */
+  .c {
+    width: 300px;
+    height: 50px;
+    overflow-x: scroll;
+    margin: 20px;
+  }
+  
+  .m {
+    display: flex;
+  }
+  
+  .d {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+   
+    .d li {
+    padding: 0 10px;
+  }
+
+  /*twenty three */
+
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  .navbar .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {
+      position: relative;
+    }
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  /* TwentyFour */
+  
+
+  .nav-c {
+    background-color: #333;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px; 
+  }
+  .nav-i {
+    color: white;
+    display: inline;
+  }
+   ul a {
+    text-decoration: none;
+    padding: 10px;
+  }
+.k {
+    flex: 1;
+    padding: 0px;
+    margin-left: 200px;
+    overflow-y: auto;
+}
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
   </style>
 </head>
 
@@ -449,8 +859,208 @@
         </div>
     
     </ul>
-
+    <div class="container">
+        <div class="box">
+          <h3>Box 1</h3>
+          <p>This is the content of Box 1.</p>
+        </div>
+        <div class="box">
+          <h3>Box 2</h3>
+          <p>This is the content of Box 2.</p>
+        </div>
+        <div class="box">
+          <h3>Box 3</h3>
+          <p>This is the content of Box 3.</p>
+        </div>
+      </div>
+      <div class="querys">
+        <h1>Media queries</h1>
+        <p>
+          Java full-stack refers to web developers that use Java to develop the entire technology.
+           This means they use Javascript for front-end programming and Java for back-end programming. 
+           There are many steps to web development and many tools that go along with each step
+        </p>
+      </div>
+       
+       <div class="image-query">
+        <div class="pic">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1QwU_qeQnrCZj9UFcubXf-c5s_3XXdek54_FUu7kJBptFPNPYHeXrwb-Pw_TaLioKKs&usqp=CAU"
+            alt="image"
+          />
+        </div>
+        <div class="pic">
+          <img
+            src="https://www.codingdojo.com/blog/wp-content/uploads/javafullstack.jpg.webp"
+            alt="image"
+          />
+        </div>
+      </div>
+     
+      <!-- fourteen -->
+      <nav class="navbar">
+        <div class="navbar-brand">
+          <p>Logo</p>
+        </div>
+        <div class="navbar-menu">
+          <ul class="navbar-nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <button class="navbar-toggle" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </nav>
+  
+      <!-- fifteen -->
+      <div class="break">
+        <header class="header">
+          <h1>Welcome to Fullstack java</h1>
+          <p>Learn and Earn knowledge</p>
+        </header>
+  
+        <section class="features">
+          <div class="feature">
+            <h2>Technology 1</h2>
+            <p>JAVA</p>
+          </div>
+          <div class="feature">
+            <h2>Technology 2</h2>
+            <p>FULL STACKp>
+          </div>
+        </section>
+  
+        <section class="sign">
+          <h2>Get Started Today</h2>
+          <p>Sign up now for amazing benefits.</p>
+          <a href="#" class="button">Sign Up</a>
+        </section>
+      </div>
+  
+      <!-- sixteen -->
+      <div class="view">
+          <div class="relate">
+            <h1>JAVA PROGRAMING</h1>
+            <p>JAVA</p>
+          </div>
+      </div>
+  
+      <!-- seventeen -->
+      <div class="horizon">
+          <div class="vertical">
+            <h1>Transformers</h1>
+            <p>FULL SATCK</p>
+          </div>
+      </div>
+  
+      <!-- eighteen -->
+      <nav>
+          <ul class="inline">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+        
+        <!-- nineteen  -->
+        <div class="hide">
+          <div class="over">
+            <h1>Transformers PROGRAMING</h1>
+             <p>Java is a widely-used programming language for coding web applications.
+               It has been a popular choice among developers for over two decades, 
+               with millions of Java applications in use today. Java is a multi-platform, object-oriented, and
+               network-centric language that can be used as a platform in itself. </p> 
+          </div>
+        </div>
+        
+        <!-- twenty -->
+        <div class="scroll">
+          <div class="scroll-over">
+            <h1>Transformers PROGRAMING</h1>
+            <p>Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications in use today. Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.</p>
+            <p>Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications in use today. Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.</p>
+          </div>
+        </div>
+  
+      <!-- twentyOne -->
+      <div class="scrolling">
+        <div class="scrolls">
+          <h1>JAVA FULLSTACK</h1>
+          <div class="scrollable">
+            <p> In Java, everything is an Object. Java can be easily extended since it is based on the Object model. Platform Independent − Unlike many other programming languages including C and C++, when Java is compiled, it is not compiled into platform specific machine, rather into platform independent byte code.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- twentyTwo -->
+      <div class="c">
+        <div class="m">
+          <ul class="d">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+      </div>
+  
+   <!-- twenty three -->
+   <div class="navbar" id="myNavbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
+
+<!-- TwentyFour     -->
+     
+<div class="nav-c">
+  <div class="nav-f">
+    <ul>
+      <a href="#"><li class="nav-i">Home</li></a>
+      <a href="#"><li class="nav-i">About</li></a>
+      <a href="#"><li class="nav-i">Phone</li></a>
+      <a href="#"><li class="nav-i">Services</li></a>
+    </ul>
+  </div>
+</div>
+<div class="sticky">
+  <div class="side">
+    <h3>Menu</h3>
+    <h5>Home</h5>
+    <h5>History</h5>
+    <h5>Shorts</h5>
+  </div>
+  <div class="maincontent">
+      <p>
+        JAVA
+        </p>
+        <img
+          src="https://images.itnewsinfo.com/lmi/articles/grande/000000091077.jpg"
+          alt=""
+        />
+        <p> java webpage
+        </p>
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+        />
+  </div>
+</div>
+<footer class="foot">
+  <p>&copy; 2023 Your Company. All rights reserved.</p>
+</footer>
 </body>
 
 </html>
